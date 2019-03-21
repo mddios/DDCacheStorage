@@ -14,6 +14,7 @@
 		60661DA422436A4E0059C949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60661DA222436A4E0059C949 /* LaunchScreen.storyboard */; };
 		60661DA722436A4E0059C949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60661DA622436A4E0059C949 /* main.m */; };
 		60661DB1224375D10059C949 /* DDCacheStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60661DB0224375D10059C949 /* DDCacheStorage.m */; };
+		60661DB32243C50D0059C949 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 60661DB22243C50D0059C949 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		60661DA622436A4E0059C949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60661DAF224375D10059C949 /* DDCacheStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCacheStorage.h; sourceTree = "<group>"; };
 		60661DB0224375D10059C949 /* DDCacheStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCacheStorage.m; sourceTree = "<group>"; };
+		60661DB22243C50D0059C949 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		60661DAE22436B5C0059C949 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				60661DB22243C50D0059C949 /* README.md */,
 				60661DAF224375D10059C949 /* DDCacheStorage.h */,
 				60661DB0224375D10059C949 /* DDCacheStorage.m */,
 			);
@@ -143,6 +146,7 @@
 			files = (
 				60661DA422436A4E0059C949 /* LaunchScreen.storyboard in Resources */,
 				60661DA122436A4E0059C949 /* Assets.xcassets in Resources */,
+				60661DB32243C50D0059C949 /* README.md in Resources */,
 				60661D9F22436A4C0059C949 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

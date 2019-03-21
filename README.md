@@ -133,9 +133,9 @@
 /// 根据时间排序获取最近的文件，key为文件名，block回调为异步
 - (void)latelyFile:(DDGetFileDataCompleteBlock) block;
 
-/// 文件发送失败，再次存入
+/// 文件发送失败，文件名放入发送队列，不涉及文件操作
 - (void)earlyAddFile:(NSString *)fileName;
-/// 文件发送失败，再次存入
+/// 文件发送失败，文件名放入发送队列，不涉及文件操作
 - (void)latelyAddFile:(NSString *)fileName;
 
 #pragma - mark 设置部分
