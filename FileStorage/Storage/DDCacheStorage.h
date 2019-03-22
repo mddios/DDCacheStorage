@@ -10,6 +10,11 @@
 
 @interface DDCacheStorage : NSObject
 
+/**
+ 关于block循环引用问题。类本身没有对block强引用，dispatch队列有强引用，但执行完会自动释放，所以不用担心
+ 关于block嵌套，即串行队列嵌套问题。都是异步方式，不会引起死锁
+ */
+
 /// 以文件名为key，文件内容为value
 typedef void (^DDGetFileDataCompleteBlock)(NSDictionary *data);
 

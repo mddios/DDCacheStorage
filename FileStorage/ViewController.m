@@ -64,6 +64,7 @@ static NSString *const gStringQCacheDirName = @"/DDCacheStorage";
     [self.cacheFile earlyFile:^(NSDictionary *data) {
         if (!data) {
             NSLog(@"no valid file");
+            self.cacheFile = nil;
             return;
         }
         NSString *fileName = data.allKeys.firstObject;

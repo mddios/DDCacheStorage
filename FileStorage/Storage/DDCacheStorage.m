@@ -46,6 +46,7 @@ static NSMapTable *gDDCacheStorageMap = nil;
         cacheStorage.dirPath = dirPath;
         cacheStorage.pendingFiles = [NSMutableArray arrayWithCapacity:1];
         cacheStorage.maxMemCacheSize = 5;
+        cacheStorage.maxFileSize = 0;
         cacheStorage.pendingFiles = [cacheStorage _existingDataFiles].mutableCopy;
         [gDDCacheStorageMap setObject:cacheStorage forKey:[dirPath copy]];
         return cacheStorage;
