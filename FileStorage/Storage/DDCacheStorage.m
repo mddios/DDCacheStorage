@@ -143,7 +143,9 @@ static NSMapTable *gDDCacheStorageMap = nil;
 }
 
 - (BOOL)isHasValuedFile {
-    return self.pendingFiles.count > 0;
+    @synchronized (self) {
+        return self.pendingFiles.count > 0;
+    }
 }
 
 /// 生成一个有序的文件名，下次读取时方便根据文件名排序
