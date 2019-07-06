@@ -27,12 +27,11 @@ static NSMapTable *gDDCacheStorageMap = nil;
         if (dirPath.length < 1) {
             return nil;
         }
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
+        if (gDDCacheStorageMap == nil) {
             gDDCacheStorageMap = [NSMapTable strongToWeakObjectsMapTable];
-        });
-        // 已经存在
-        if ([gDDCacheStorageMap objectForKey:dirPath]) {
+        }
+        else if ([gDDCacheStorageMap objectForKey:dirPath]) {
+            // 已经存在
             return [gDDCacheStorageMap objectForKey:dirPath];
         }
         // 创建失败
